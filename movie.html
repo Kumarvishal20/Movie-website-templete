@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="top">
+        <div class="head">
+            <div class="nav">
+
+               <div>
+                   <img src="./pictures/alexander-shatov-UVfvFrp4x4E-unsplash.jpg" alt="">
+               </div>
+
+                <ul>
+                    <li>Movie</li>
+                    <li>Tv Series</li>
+                    <li>Audio</li>
+                </ul>
+            </div>
+            <div class="mid">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="./pictures/large-1466557422-feature.jpg" id="scroll" >
+
+
+                    </div>
+
+                   
+
+                    <div class="mySlides fade">
+
+                        <img src="./pictures/F762X7.jpg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./pictures/3axzol7vy0l31.jpg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./pictures/India-couple-holi-happy-dating.jpg" style="width:100%">
+
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second">
+        <div class="kkk">
+            <div>
+                <select name="genere" id="se">genere
+                    <option value="">All</option>
+                    <option value="">Drama</option>
+                    <option value="">Action</option>
+                    <option value=""> Sci-Fi</option>
+                </select>
+            </div>
+            <div class="iput">
+                <input type="text" id="ll" placeholder="search your favourite movie title">
+
+            </div>
+        </div>
+
+        <div class="action">
+            <h3>Popular in action</h3>
+        </div>
+        <div class="img1">
+            <img src="./pictures/F6J4P6 (2).jpg" alt="">
+            <img src="./pictures/2A96XD5 (2).jpg" alt="">
+            <img src="./pictures/2AGAWRY (2).jpg" alt="">
+            <img src="./pictures/2A6BFFC (2).jpg" alt="">
+            <img src="./pictures/PMBPX6 (2).jpg" alt="">
+            <img src="./pictures/PMBPX7 (2).jpg" alt="">
+            <img src="./pictures/R6DRYT (2).jpg" alt="">
+            <img src="./pictures/RBNF8X (2).jpg" alt="">
+        </div>
+
+        <div class="action">
+            <h3>Popular in Drama</h3>
+        </div>
+        <div class="img1">
+            <img src="./pictures/02best-films11.jpg" alt="">
+            <img src="./pictures/4-india-movie-poster-design-idea-bahubali.jpg" alt="">
+            <img src="./pictures/lagaan-bollywood-movie-poster.jpg" alt="">
+            <img src="./pictures/F6J7RR.jpg" alt="">
+            <img src="./pictures/F762WP (2).jpg" alt="">
+            <img src="./pictures/F6JF83 (2).jpg" alt="">
+            <img src="./pictures/F6J8EB (2).jpg" alt="">
+
+        </div>
+
+        <div class="action">
+            <h3>Popular in Sci-Fci</h3>
+        </div>
+        <div class="img1">
+            <img src="./pictures/8aa8415aa876a571272cb59eaeae61b4.jpg" alt="">
+            <img src="./pictures/invasion-425x600.jpg" alt="">
+            <img src="./pictures/Pacific_Rim_Uprising_-_Tallenge_Hollywood_Sci-Fi_Movie_Poster_Collection_dbe48f3d-3438-449c-b852-848e5987865d.jpg"
+                alt="">
+            <img src="./pictures/affiche-lost-in-space-2018-2.jpg" alt="">
+            <img src="./pictures/9-tron-legacy_1326253207.jpg" alt="">
+            <img src="./pictures/b6f741e84097a01a809a179aa4c57843.jpg" alt="">
+            <img src="./pictures/the-adjustment-bureau-2011.jpg" alt="">
+            <img src="./pictures/images.jpg" alt="">
+
+        </div>
+
+        <div class="head">
+            <div class="foot">
+                <div>
+                    <img src="./pictures/alexander-shatov-UVfvFrp4x4E-unsplash.jpg" id="scroll" alt="">
+                </div>
+                <div class="active">
+                    Powered by 365 Entertainment Portal 2019. All Rights Reserved.
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          
+          slides[slideIndex-1].style.display = "block";  
+          
+        }
+        </script>
+</body>
+
+</html>
